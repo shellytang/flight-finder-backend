@@ -7,8 +7,7 @@
     "test": "mocha",
     "start": "node server.js",
     "lint": "eslint .",
-    "watch": "webpack-dev-server --inline --hot",
-    "build": "webpack"
+    "build": "npm run lint && npm run test"
   },
   "repository": {
     "type": "git",
