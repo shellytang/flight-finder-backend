@@ -11,19 +11,18 @@ exports.fetchFlights = function(req) {
       if(err) {
         return reject(err);
       }
-
+      
       let allFlights = JSON.parse(data);
       let searchResults = [];
 
-      for(let i = 0; i < allFlights.length; i++) {
-        if(allFlights[i].From === req.params.from && allFlights[i].To === req.params.to) {
-          searchResults.push(allFlights[i]);
+      allFlights.forEach((flight) => {
+        if(flight.From === req.params.from && flight.To === req.params.to) {
+          searchResults.push(flight);
         }
-      }
+      });
 
       if(searchResults.length === 0) return reject(err);
       return resolve(searchResults);
-
     });
   });
 };
