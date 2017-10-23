@@ -1,0 +1,32 @@
+{
+  "name": "flight-search-backend",
+  "version": "1.0.0",
+  "description": "flight search backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js",
+    "lint": "eslint .",
+    "watch": "webpack-dev-server --inline --hot",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shellytang/flight-search-backend.git"
+  },
+  "author": "shelly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shellytang/flight-search-backend/issues"
+  },
+  "homepage": "https://github.com/shellytang/flight-search-backend#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "cors": "^2.8.4",
+    "csvtojson": "^1.1.9",
+    "eslint": "^4.9.0",
+    "express": "^4.16.2",
+    "mocha": "^4.0.1",
+    "superagent": "^3.7.0"
+  }
+}
