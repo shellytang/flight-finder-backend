@@ -4,15 +4,15 @@
 This is a simple API that allows users to fetch a list of airports and a list of flights based on departure and arrival airports.
 
 ## Sites
-* Deployed API:   
+* Deployed API: https://flight-finder-api.herokuapp.com/
 * Front-end
-  * Github:
-  * Deployed App:
+  * Github: https://github.com/shellytang/flight-finder-frontend
+  * Deployed App: https://flight-search-frontend.herokuapp.com/
 
 ## API Endpoints
 * GET `/api/airports`
 * GET `/api/flights/:from/:to`
-  * e.g., `/api/flights/PHX/LAX`
+  * e.g., `/api/flights/SEA/LAX`
 * Sample JSON response:
 ```Javascript
 [
